@@ -1,0 +1,124 @@
+.login-page {
+  min-height: calc(100vh - 94px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #eef4ff, #f7f9fc);
+  padding: 40px 20px;
+}
+
+.login-card {
+  width: 420px;
+  background: white;
+  padding: 45px 42px;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(20, 50, 90, 0.12);
+  text-align: center;
+}
+
+.login-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #55c8df;
+  color: #102d47;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.login-card h1 {
+  margin: 0;
+  color: #102d47;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login-subtitle {
+  margin: 10px 0 30px;
+  color: #718096;
+  font-size: 15px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #26384a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #d8e0e8;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #55c8df;
+  box-shadow: 0 0 0 3px rgba(85, 200, 223, 0.15);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 25px;
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #66788a;
+}
+
+.login-options a {
+  color: #2389a3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #55c8df;
+  color: #102d47;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  background: #40b7d0;
+  transform: translateY(-1px);
+}
+
+.signup-text {
+  margin-top: 25px;
+  color: #718096;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #2389a3;
+  text-decoration: none;
+  font-weight: 700;
+}

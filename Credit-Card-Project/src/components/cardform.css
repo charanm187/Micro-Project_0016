@@ -1,0 +1,169 @@
+.card-form {
+  width: 381px;
+}
+
+
+/* LABEL */
+
+.card-form label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #21092f;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+
+/* INPUT */
+
+.card-form input {
+  width: 100%;
+
+  height: 46px;
+
+  padding: 0 15px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d9d9d9;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #21092f;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+
+.card-form input::placeholder {
+  color: #aaa;
+}
+
+
+.card-form input:focus {
+  border-color: #6348a7;
+}
+
+
+/* ERROR */
+
+.error {
+  margin: 6px 0 0;
+
+  color: #ff5252;
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+
+/* EXPIRY + CVC */
+
+.details-row {
+  display: flex;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+
+.expiry-section {
+  width: 170px;
+}
+
+
+.cvc-section {
+  flex: 1;
+}
+
+
+/* EXPIRY INPUTS */
+
+.expiry-inputs {
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.expiry-inputs input {
+  width: 80px;
+}
+
+
+/* CVC */
+
+.cvc-section input {
+  width: 100%;
+}
+
+
+/* BUTTON */
+
+.confirm-button {
+  width: 100%;
+
+  height: 50px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #21092f;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.confirm-button:hover {
+  background: #3d1553;
+
+  transform: translateY(-1px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .card-form {
+    width: 100%;
+
+    max-width: 381px;
+  }
+
+  .details-row {
+    gap: 10px;
+  }
+
+  .expiry-section {
+    width: 160px;
+  }
+}

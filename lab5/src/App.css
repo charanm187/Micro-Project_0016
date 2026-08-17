@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* HEADER */
+
+.header {
+  height: 78px;
+  background: #102a43;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  color: white;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  color: #56cfe1;
+}
+
+.nav-button {
+  background: #56cfe1;
+  color: #102a43 !important;
+  padding: 11px 22px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* HOME */
+
+.home {
+  min-height: 650px;
+  background: linear-gradient(
+    135deg,
+    #102a43,
+    #1d4e89,
+    #168aad
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 8%;
+  color: white;
+}
+
+.home-content {
+  max-width: 850px;
+  text-align: center;
+}
+
+.small-title {
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: #90e0ef;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.home h1 span {
+  color: #90e0ef;
+}
+
+.home-description {
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  color: #e8f1f5;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.primary-button {
+  background: #56cfe1;
+  color: #102a43;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: #90e0ef;
+}
+
+.secondary-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background: white;
+  color: #102a43;
+}
+
+/* INFO SECTION */
+
+.info-section {
+  padding: 70px 8%;
+  text-align: center;
+  background: white;
+}
+
+.info-section h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #102a43;
+}
+
+.info-section p {
+  color: #607080;
+  font-size: 17px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  width: 260px;
+  padding: 30px;
+  background: #f5f7fb;
+  border-radius: 12px;
+  border: 1px solid #dbe4ea;
+}
+
+.info-card h3 {
+  margin-bottom: 12px;
+  color: #1d4e89;
+}
+
+.info-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #102a43;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 5%;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .home-description {
+    font-size: 16px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+}

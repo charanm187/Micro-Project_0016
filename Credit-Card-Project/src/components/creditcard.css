@@ -1,0 +1,313 @@
+.credit-cards {
+  position: relative;
+  width: 540px;
+  height: 550px;
+}
+
+
+/* =========================
+   FRONT CARD
+========================= */
+
+.front-card {
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  width: 447px;
+  height: 245px;
+
+  padding: 28px;
+
+  border-radius: 12px;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(255, 255, 255, 0.2),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #6348a7 0%,
+      #4b1c68 45%,
+      #21092f 100%
+    );
+
+  box-shadow:
+    0 20px 35px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+
+  z-index: 2;
+}
+
+
+/* CARD LOGO */
+
+.card-top {
+  display: flex;
+  align-items: center;
+}
+
+.card-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-large {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  background: white;
+}
+
+.logo-small {
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid white;
+
+  border-radius: 50%;
+
+  margin-left: -8px;
+}
+
+
+/* CARD NUMBER */
+
+.card-number {
+  margin-top: 42px;
+
+  font-size: 26px;
+
+  letter-spacing: 3px;
+
+  white-space: nowrap;
+}
+
+
+/* CARD BOTTOM */
+
+.card-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 30px;
+
+  font-size: 13px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.card-name {
+  max-width: 280px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.card-expiry {
+  white-space: nowrap;
+}
+
+
+/* =========================
+   BACK CARD
+========================= */
+
+.back-card {
+  position: absolute;
+
+  top: 295px;
+
+  left: 80px;
+
+  width: 447px;
+
+  height: 245px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5f5f5,
+      #dedede
+    );
+
+  box-shadow:
+    0 20px 35px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+
+/* MAGNETIC STRIP */
+
+.magnetic-strip {
+  width: 100%;
+
+  height: 52px;
+
+  margin-top: 32px;
+
+  background: #1b1b1b;
+}
+
+
+/* CVC */
+
+.cvc-area {
+  width: 365px;
+
+  height: 42px;
+
+  margin: 20px auto 0;
+
+  padding-right: 15px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  background: #c5c5c5;
+
+  color: #222;
+
+  font-size: 14px;
+
+  font-style: italic;
+
+  letter-spacing: 1px;
+}
+
+
+/* DECORATIVE LINES */
+
+.back-lines {
+  margin: 20px auto;
+
+  width: 365px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.back-lines span {
+  display: block;
+
+  height: 4px;
+
+  background: #d0d0d0;
+
+  border-radius: 4px;
+}
+
+.back-lines span:nth-child(1) {
+  width: 65%;
+}
+
+.back-lines span:nth-child(2) {
+  width: 85%;
+}
+
+.back-lines span:nth-child(3) {
+  width: 45%;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .credit-cards {
+    width: 350px;
+    height: 300px;
+  }
+
+  .front-card {
+    width: 330px;
+    height: 180px;
+
+    left: 0;
+
+    top: 0;
+
+    padding: 20px;
+  }
+
+  .back-card {
+    width: 330px;
+    height: 180px;
+
+    left: 30px;
+
+    top: 120px;
+  }
+
+  .card-number {
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+  }
+
+  .card-bottom {
+    margin-top: 18px;
+
+    font-size: 9px;
+  }
+
+  .logo-large {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo-small {
+    width: 15px;
+    height: 15px;
+  }
+
+  .magnetic-strip {
+    height: 35px;
+
+    margin-top: 20px;
+  }
+
+  .cvc-area {
+    width: 270px;
+
+    height: 30px;
+
+    margin-top: 15px;
+  }
+
+  .back-lines {
+    width: 270px;
+
+    margin-top: 12px;
+  }
+}

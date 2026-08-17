@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  font-family:
+    "Space Grotesk",
+    Arial,
+    sans-serif;
+
+  background: white;
+}
+
+
+.app {
+  min-height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+
+/* LEFT PURPLE AREA */
+
+.purple-background {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 35%;
+  height: 100vh;
+
+  background:
+    linear-gradient(
+      145deg,
+      #21092f 0%,
+      #2f0b44 45%,
+      #15051f 100%
+    );
+}
+
+
+/* MAIN CONTENT */
+
+.main-container {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 90px;
+
+  padding: 40px;
+}
+
+
+/* CARDS */
+
+.cards-section {
+  width: 540px;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+/* FORM */
+
+.form-section {
+  width: 381px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* TOAST */
+
+.toast {
+  position: fixed;
+
+  top: 30px;
+
+  right: 30px;
+
+  padding: 14px 22px;
+
+  border-radius: 8px;
+
+  background: #21092f;
+
+  color: white;
+
+  font-size: 14px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+
+  animation:
+    toast-in 0.3s ease;
+}
+
+
+@keyframes toast-in {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .app {
+    overflow-y: auto;
+  }
+
+
+  .purple-background {
+    position: absolute;
+
+    width: 100%;
+
+    height: 240px;
+
+    background:
+      linear-gradient(
+        145deg,
+        #21092f,
+        #3c1453
+      );
+  }
+
+
+  .main-container {
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    gap: 0;
+
+    padding:
+      30px
+      20px
+      60px;
+  }
+
+
+  .cards-section {
+    width: 100%;
+
+    height: 320px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 10px;
+  }
+
+
+  .form-section {
+    width: 100%;
+
+    justify-content: center;
+
+    background: white;
+
+    padding-top: 30px;
+  }
+
+
+  .toast {
+    left: 20px;
+
+    right: 20px;
+
+    top: 20px;
+
+    text-align: center;
+  }
+}
